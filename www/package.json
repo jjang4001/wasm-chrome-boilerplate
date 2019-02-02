@@ -1,0 +1,32 @@
+{
+  "name": "wasm-chrome-boilerplate",
+  "version": "0.1.0",
+  "description": "boilerplate for creating chrome extensions using web assembly with rust",
+  "main": "index.js",
+  "bin": {
+    "create-wasm-app": ".bin/create-wasm-app.js"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jjang4001/wasm-chrome-boilerplate.git"
+  },
+  "keywords": [
+    "webassembly",
+    "wasm",
+    "rust",
+    "webpack",
+    "chrome extensions",
+    "bindgen"
+  ],
+  "author": "Junwon Jang",
+  "devDependencies": {
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5",
+    "copy-webpack-plugin": "^4.5.2"
+  }
+}

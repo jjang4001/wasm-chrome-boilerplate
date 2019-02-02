@@ -1,0 +1,8 @@
+/target
+**/*.rs.bk
+Cargo.lock
+/pkg
+.DS_Store
+/bin
+wasm-pack.log
+before.txt
