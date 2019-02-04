@@ -1,4 +1,4 @@
-import { BindgenExamples } from 'rust-wasm-examples';
+import { BindgenExamples } from './crate/pkg';
 
 const bindgenExamples = BindgenExamples.new(1);
 
