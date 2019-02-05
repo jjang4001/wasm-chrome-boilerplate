@@ -1,4 +1,4 @@
-import { BindgenExamples } from './crate/pkg';
+import { BindgenExamples } from '../../crate/pkg';
 
 const bindgenExamples = BindgenExamples.new(1);
 
@@ -23,7 +23,7 @@ createHelloElementButton.addEventListener('click', evt => {
 
 wasmFibonacciButton.addEventListener('click', evt => {
   const val = document.getElementById('fibonacci-input').value;
-  bindgenExamples.time_fibonacci(val);
+  bindgenExamples.time_fibonacci(parseInt(val));
 });
 
 jsFibonacciButton.addEventListener('click', evt => {

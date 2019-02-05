@@ -4,3 +4,6 @@
 
 import("./index.js")
   .catch(e => console.error("Error importing `wasm-bindgen-examples`:", e));
+
+import './style.scss';
+
