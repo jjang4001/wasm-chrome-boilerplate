@@ -1,4 +1,4 @@
-import { BindgenExamples } from './crate/pkg';
+import { BindgenExamples } from '../../crate/pkg/rust_wasm_examples';
 
 const bindgenExamples = BindgenExamples.new(1);
 
@@ -22,15 +22,15 @@ createHelloElementButton.addEventListener('click', evt => {
 });
 
 wasmFibonacciButton.addEventListener('click', evt => {
-  const val = document.getElementById('fibonacci-input').value;
-  bindgenExamples.time_fibonacci(val);
+  const val = (document.getElementById('fibonacci-input') as HTMLInputElement).value;
+  bindgenExamples.time_fibonacci(parseInt(val));
 });
 
 jsFibonacciButton.addEventListener('click', evt => {
   time_fibonacci();
 });
 
-const fibonacci = (n) => {
+const fibonacci = (n: number): number => {
   if (n < 0) {
     alert('Invalid input');
     return;
@@ -44,15 +44,15 @@ const fibonacci = (n) => {
 }
 
 const time_fibonacci = () => {
-  const val = document.getElementById('fibonacci-input').value;
+  const val = (document.getElementById('fibonacci-input') as HTMLInputElement).value;
   let t0 = performance.now();
-  let res = fibonacci(val);
+  let res = fibonacci(parseInt(val));
   let t1 = performance.now();
   let duration = t1 - t0;
   displayFibonacciTime(duration, res);
 }
 
-const displayFibonacciTime = (duration, result) => {
+const displayFibonacciTime = (duration: number, result: number) => {
   const resElement = document.createElement("p");
   resElement.innerHTML = `JS duration: ${duration} ms, result: ${result}`;
 
