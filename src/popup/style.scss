@@ -1,0 +1,30 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.wasm-bindgen-examples {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%; 
+}
+
+.example-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fibonacci-container {
+  text-align: center;
+}
+
+#fibonacci-input-field {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#fibonacci-input {
+  display: inline-block;
+}
