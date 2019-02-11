@@ -1,0 +1,70 @@
+Arguments: 
+  /Users/gcnml/.nvm/versions/node/v10.7.0/bin/node /usr/local/Cellar/yarn/1.9.4/libexec/bin/yarn.js add --dev @wasm-tool/wasm-pack-plugin
+
+PATH: 
+  /Users/gcnml/.cargo/bin:/Users/gcnml/.nvm/versions/node/v10.7.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/Users/gcnml/go/bin:/usr/local/opt/go/libexec/bin
+
+Yarn version: 
+  1.9.4
+
+Node version: 
+  10.7.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: unable to get local issuer certificate
+      at TLSSocket.onConnectSecure (_tls_wrap.js:1048:34)
+      at TLSSocket.emit (events.js:182:13)
+      at TLSSocket._finishInit (_tls_wrap.js:628:8)
+
+npm manifest: 
+  {
+    "name": "wasm-chrome-boilerplate",
+    "version": "0.1.0",
+    "description": "boilerplate for creating chrome extensions using web assembly with rust",
+    "main": "index.js",
+    "bin": {
+      "create-wasm-app": ".bin/create-wasm-app.js"
+    },
+    "scripts": {
+      "build": "webpack --config webpack/webpack.prod.js",
+      "start": "webpack-dev-server --config webpack/webpack.dev.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/jjang4001/wasm-chrome-boilerplate.git"
+    },
+    "keywords": [
+      "webassembly",
+      "wasm",
+      "rust",
+      "webpack",
+      "chrome extensions",
+      "bindgen"
+    ],
+    "author": "Junwon Jang",
+    "devDependencies": {
+      "@types/chrome": "~0.0.72",
+      "@wasm-tool/wasm-pack-plugin": "0.2.3",
+      "css-loader": "^0.28.0",
+      "html-webpack-plugin": "^3.2.0",
+      "node-sass": "^4.5.2",
+      "sass-loader": "^7.1.0",
+      "source-map-loader": "^0.2.4",
+      "style-loader": "^0.16.1",
+      "ts-loader": "^5.1.1",
+      "typescript": "^3.0.3",
+      "webpack": "^4.16.3",
+      "webpack-cli": "^3.1.0",
+      "webpack-dev-server": "^3.1.5",
+      "webpack-merge": "~4.1.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
