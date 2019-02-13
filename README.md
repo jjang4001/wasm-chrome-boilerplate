@@ -19,5 +19,12 @@ Make sure you have wasm-pack downloaded before running.
     ```
     and then go to `localhost:8080`.
 
+4. Docker
+    ```
+    docker build -t <docker-id>/<app-name>:latest . -f Dockerfile.dev
+    docker run -it jji421/dockerrust sh
+    docker run --rm -p 8080:8080 jji421/dockerrust
+    ```
+
 # Remarks
 Note that `~/src/popup/bootstrap.js` is a js file. This is because `ts-loader` doesn't integrate very well with asynchronous imports, which are required for importing wasm modules.
